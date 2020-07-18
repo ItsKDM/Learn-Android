@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroAndroid">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_android_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_content_android_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android is a mobile operating system, based on Linux Kernel and developed by Google as a software
+bunch comprising not only operating system but also middleware and key applications.Android is designed especially for touchscreen
+mobile devices such as smartphones and tablets. Google has further developed Android TV for television, Android Auto for Cars and Android Wear for Wrist Watches."
+                android:layout_below="@id/tv_android_intro"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content_android_intro"
+                android:text="History"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_content_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Inc. was founded in Palo Alto, California in October 2003 by Andy Rubin, Rich Miner, Nick Sears, and Chris White.
+Rubin described the Android project as ''Tremendous potential in developing smarter mobile devices that are more aware of its owner's location and preferences''.
+Rubin had difficulty attracting investors early on, and Android was facing eviction from its office space. Steve Perlman, a close friend of Rubin, brought him $10,000
+in cash in an envelope, and shortly thereafter wired an unclosed amount as seed funding. Perlman refused a stake in the Company, and has stated ''I did it because I believed
+in the thing, and I wanted to help Andy.\n
+\n
+In July 2005, Google acquires Android Inc. for at least $50 million. Its key employees, including Rubin, Miner and White, joined Google as part of the acquisition. Not much was known about the
+secretive Android at the time, with the company having provided few details other than that it was making software for mobile phones. At Google, the team led by Rubin developed a mobile device platform
+powered by the Linux Kernel.\n
+\n
+In November 2007, the Open Handset Alliance(OHA) was established by 34 founding members dedicated to development of open mobile standards, including Google, mobile devices manufactures,
+application developer, embedded systems developers, and commercialisation companies. The goal of this alliance as described in the website is to accelerate innovation in mobile and offer
+consumers a richer, less expensive, and better mobile experience."
+                android:layout_below="@id/tv_history"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Versions"
+                android:layout_below="@id/tv_content_history"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/iv_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_version"
+                android:src="@drawable/versions"/>
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 1.0\nSeptember 2008"
+                android:layout_below="@id/iv_version"
+                />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 1.5 Cupcake\nApril 2009"
+                android:layout_below="@id/btn_1"
+                />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 1.6 Donut\nSeptember 2009"
+                android:layout_below="@id/btn_2"
+                />
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 2.0-2.1 Eclair\nOctober 2009"
+                android:layout_below="@id/btn_3"
+                />
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 2.2 Froyo\nMay 2010"
+                android:layout_below="@id/btn_4"
+                />
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 2.3 Gingerbread\nFebruary 2011"
+                android:layout_below="@id/btn_5"
+                />
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 4.0 Ice Cream Sandwich\nOctober 2011"
+                android:layout_below="@id/btn_6"
+                />
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 4.1-4.3 Jelly Bean\nFebruary 2011"
+                android:layout_below="@id/btn_7"
+                />
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 4.4 KitKat\nOctober 2013"
+                android:layout_below="@id/btn_8"
+                />
+
+            <Button
+                android:id="@+id/btn_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 5.0-5.1 Lollipop\nNovember 2014"
+                android:layout_below="@id/btn_9"
+                />
+
+            <Button
+                android:id="@+id/btn_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 6.0 Marshmallow\nOctober 2015"
+                android:layout_below="@id/btn_10"
+                />
+
+            <Button
+                android:id="@+id/btn_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 7.0-7.1 Nougat\nAugust 2016"
+                android:layout_below="@id/btn_11"
+                />
+
+            <Button
+                android:id="@+id/btn_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 8.0-8.1 Oreo\nAugust 2017"
+                android:layout_below="@id/btn_12"
+                />
+
+            <Button
+                android:id="@+id/btn_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android 9 Pie\nMarch 2018"
+                android:layout_below="@id/btn_13"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

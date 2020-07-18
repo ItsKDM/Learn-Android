@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Basic.Basic">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/intro_android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduction to Android"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/android_studio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Studio"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/android_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Project Structure"
+                android:layout_marginTop="7dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/android_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Application Fundamental"
+                android:layout_marginTop="7dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/android_intent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Intent"
+                android:layout_marginTop="7dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/android_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Views, Layouts and Resources"
+                android:layout_marginTop="7dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/android_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Fragment"
+                android:layout_marginTop="7dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/android_ui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android UI Widget"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/android_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Containers"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/android_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Menu"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/android_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Data Storage"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/android_json"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android JSON Parsing"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/android_firebase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Firebase"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lin1"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout android:orientation="vertical"
+                android:id="@+id/linLay1"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:id="@+id/heading_intents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Android Intent"
+                    android:textAlignment="gravity"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:id="@+id/intents"
+                    android:text="Intent are a synchronous messages which allow application components to request functionality from other Android components.
+Intents allow you to interact with components from the same applications as well as with components contributed by other applications. For example,
+an activity can start an external activity for taking a picture.\n
+To start an activity, we use the method startActivity(intent).\n
+Intent are also used to start services, to start a services via intents, use the startService(intent) method call."
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Explicit and Implicit Intents"
+                    android:textAlignment="gravity"/>
+
+                <TextView
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Explicit Intent:"
+                    android:textAlignment="gravity"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:id="@+id/explicit_intent1"
+                    android:text="While creating an Intent object when we explicitly specify and pass on the target component name directly in the intent.
+It's an explicit intent is most commonly used when launching an activity (from another one) within the same application."
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="15sp"
+                            android:background="#BDBDBD"
+                            android:id="@+id/explicit_intent_code1"
+                            android:layout_width="700dp"
+                            android:layout_height="wrap_content"
+                            android:text=" 1. Intent intent = new Intent(Activity1.this, Activity2.class);\n
+2. startActivity(intent);"/>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:id="@+id/explicit_intent2"
+                    android:background="#FFFFFF"
+                    android:text="In the code above we try to launch Activity2.java from Activity1.java which is placed at the top of the activity stack.\n
+\n
+We can send data to another activity by adding it to our intent in key-value pairs that can be retrieved by the receiving activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:background="#BDBDBD"
+                            android:textSize="15sp"
+                            android:id="@+id/explicit_intent_code2"
+                            android:layout_width="700dp"
+                            android:layout_height="wrap_content"
+                            android:text=" 1. //Currently in Activity2\n
+2. Intent intent = new Intent(this, Activity1.class);\n
+3. intent.putExtra(''name'', ''Kdm'');\n
+4. intent.putExtra(''age'', 18);\n
+5. startActivity(intent);"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:id="@+id/explicit_intent3"
+                    android:background="#FFFFFF"
+                    android:text="We just transferred two pieces of data, first one is string the other one is an integer.The key has to be of the type String.
+As values we can use the primitive data types (int, double, etc.) as well as objects of type CharSequence, String, Bundle, Parceable and Serializable.
+Now we will retrieve this data when the new Activity is launched (inside onCreate()for instance)."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="15sp"
+                            android:background="#BDBDBD"
+                            android:id="@+id/explicit_intent_code3"
+                            android:layout_width="700dp"
+                            android:layout_height="wrap_content"
+                            android:text=" 1. //Currently in Activity1\n
+2. Bundle extras = getIntent().getExtras();\n
+3. \n
+4. if(extras != null){\n
+5.   String name = extras.getString(''name'');\n
+6. int age = extras.getInt(''age'');\n
+7. }"
+                            />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:id="@+id/explicit_intent4"
+                    android:background="#FFFFFF"
+                    android:text="So calling getExtras() on the Intent object gives us a bundle object on which we can all various methods like getString(), getInt(), getChar(), etc.
+                 to retrieve various values that were transmitted. Instead of working with bundles you can also use methods on Intent object like getStringExtra() and getIntExtra()."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Implicit Intent:"
+                    android:textAlignment="gravity"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:id="@+id/implicit_intent1"
+                    android:background="#FFFFFF"
+                    android:text="In an Implicit Intent we delegate the task of evaluating the registered components to Android based on intent data and the intended action(like send an email, capture a photo, pin location on a map etc)
+that we pass. Android will automatically fire up the component from the same app or some other app that can handle the intent message/job.\n
+For example, the following tells the Android system to view a webpage. All installed web browsers should be registered to the corresponding intent data via an intent filter."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:background="#BDBDBD"
+                            android:textSize="15sp"
+                            android:id="@+id/implicit_intent_code1"
+                            android:layout_width="700dp"
+                            android:layout_height="wrap_content"
+                            android:text=" 1. Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(''https://www.google.com''));"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

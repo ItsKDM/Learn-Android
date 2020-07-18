@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectStructure">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_structure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Project Structure"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/iv_structure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_structure"
+                android:src="@drawable/structure" />
+
+            <TextView
+                android:id="@+id/tv_structure_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" AndroidManifest.xml:\n
+This is the Android definition file. It contains information about the Android application such as minimum Android device capabilities such as internet access permission, ability to use phone permission, etc.\n
+\n
+Java:\n
+Contains the Java code files of the Project.\n
+\n
+Resources:\n
+Here we can store resources files such as pictures, XML files for defining layouts, and so forth. Within this folder there are additional folders such as Drawable, Layout, and Values.\n
+\n
+Drawable:\n
+For Images and Icons.\n
+\n
+Layout:\n
+For Layout Resources Files.\n
+\n
+Menu:\n
+For Menu Items.\n
+\n
+MipMap:\n
+For Pre-Calculated, Optimized Collection of app icons used by the Launcher.\n
+\n
+Values:\n
+For Colors, Dimensions, Strings, Styles(Theme Attributes).\n
+\n
+Gradle:\n
+Inside you can find all settings and other files used by gradle to build the project. You can delete these files without problems. Gradle will recreate it. Also these file are not committed and Version Control Systems.
+ It means that when you checkout the project these files are not present on the project."
+                android:layout_below="@id/iv_structure"
+                android:textSize="22sp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

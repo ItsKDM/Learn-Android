@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AndroidStudio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_introduction_android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introduction To Android Studio"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_content_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Studio is Google's officially supported IDE for developing Android apps. Based on IntelliJ IDEA,
+Android Studio is freely available under Apache License 2.0. Google provides Android Studio for the Windows, Mac OS X, and Linux platforms.
+You can download this software from the Android Studio Homepage."
+                android:layout_below="@id/tv_introduction_android"
+                android:textSize="22sp"/>
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="407dp"
+                android:layout_height="342dp"
+                android:layout_below="@id/tv_content_introduction"
+                android:layout_alignStart="@+id/tv_introduction_android"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/androidstudiologo" />
+
+            <TextView
+                android:id="@+id/tv_how_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Install Android Studio Requirements"
+                android:layout_below="@id/iv_logo"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_req"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Studio has the following requirements to be matched for smooth running and performance.\n
+\n
+Windows OS\n"
+                android:layout_below="@id/tv_how_to"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tv_win_os"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_req"
+                android:text="- Microsoft Windows 7/8/10(32-bit or 64-bit)\n
+- 2GB of available disk space minimum, 4GB recommended (500 MB for IDE + 1.5GB for Android SDK and emulator system image)\n
+- 2GB RAM minimum, 8GB RAM recommended\n
+- 1280 x 800 minimum screen resolution.\n
+- For accelerated emulator: 64-bit OS and Intel processor with support for Intel VT-x, Intel EM64T(Intel 64), and Execute Disable(XD) Bit Functionality.\n
+\n
+Mac OS\n
+\n
+- Mac Os X 10.8.5 or higher.\n
+- 2GB of available disk space minimum, 4GB Recommended(500 MB for IDE + 1.5GB for Android SDK and Emulator system image).\n
+- 2GB RAM minimum, 8GB RAM recommended.\n
+- 1280 x 800 minimum screen resolution.\n
+- JDK 6.\n
+\n
+Linux OS\n
+\n
+- GNOME or KDE desktop: Tested on Ubuntu 12.04 Precise Pangolin(64-bit distribution capable of running 32-bit application)\n
+- 64-bit distribution capable of running 32-bit application.\n
+- GNU C Library (glibc) 2.11 or later.\n
+- 2GB RAM minimum, 8GB RAM recommended.\n
+- 2GB of available disk space minimum, 4GB Recommended(500MB for IDE + 1.5GB for Android SDK and emulator system image).\n
+- 1280 x 800 minimum screen resolution.\n
+- JDK 8.\n
+- For accelerated emulator: Intel processor with support for Intel VT-x, Intel EM64T(Intel 64), and Execute Disable(XD) bit functionality, or AMD processor with support for AMD Virtualization(AMD-V).\n
+\n
+Installation\n
+\n
+Step 1: Install Java JDK. Grab the one that matches your system of use."
+                android:textSize="22sp"/>
+
+            <ImageView
+                android:id="@+id/iv_jdk"
+                android:layout_width="407dp"
+                android:layout_height="342dp"
+                android:layout_below="@id/tv_win_os"
+                android:src="@drawable/jdk" />
+
+            <TextView
+                android:id="@+id/tv_step_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_below="@id/iv_jdk"
+                android:text="Step 2: Download Android Studio and run setup. The first screen will appear like this:"/>
+
+            <ImageView
+                android:id="@+id/iv_install"
+                android:layout_width="407dp"
+                android:layout_height="342dp"
+                android:src="@drawable/setup"
+                android:layout_below="@id/tv_step_2"/>
+
+            <TextView
+                android:id="@+id/tv_follow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_below="@id/iv_install"
+                android:text="Step 3: Follow the instruction and steps in the installation setup. Click next until the installation is complete."/>
+
+            <TextView
+                android:id="@+id/tv_and_ui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_below="@id/tv_follow"
+                android:text="\nAndroid Studio User Interface\n"/>
+
+            <ImageView
+                android:id="@+id/iv_ui"
+                android:layout_width="407dp"
+                android:layout_height="342dp"
+                android:src="@drawable/ui"
+                android:layout_below="@id/tv_and_ui"/>
+
+            <TextView
+                android:id="@+id/tv_ui_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_below="@id/iv_ui"
+                android:text="1. The toolbars lets you carry out a wide range of action, including running your app and launching Android tools.\n
+2. The navigation bar helps you navigate through your project and i=open files for editing. It provides a more compact view of the structure visible in the Project window.\n
+3. The editor window is where you create and modify code. Depending on the current file type, the editor can change. For example, when viewing a layout file, the editor displays the Layout Editor.\n
+4. The tool window bar runs around the outside of the IDE window and contains the buttons that allow you to expand or collapse individual tool windows.\n
+5. The tool windows give you access to specific tasks like project management, search, version control, and more. You can expand them and collapse them.\n
+6. The status bar displays the status of your project and the IDE itself, as well as any warnings or messages."/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

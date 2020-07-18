@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".JSON">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Android JSON Parsing"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="JSON stands for JavaScript Object Notation. It is an independent data exchange format and is the best alternative for XML. In summary, JSON is:\n
+A data-interchange format.\n
+A means to encode JavaScript objects as strings.\n
+Limited to text and numeric values. Binary values are explicitly not permitted. JSON has no CDATA equivalent.\n
+More economical than XML in terms of data size, at the expense of readability.\n
+Increasingly available as an option from API providers such as Twitter.\n
+\n
+Android provides four different classes to manipulate JSON data. These classes are JSONArray, JSONObject, JSONString and JSONTokenizer.\n
+\n
+Following is a JSON Array:"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="700dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:background="#BDBDBD"
+                        android:text=" 1. [\n
+2.    {\n
+3.       ''colors'':\n
+4.           {\n
+5.              ''black'': #000000,\n
+6.              ''white'': #FFFFFF,\n
+7.            }\n
+8.     }\n
+9.\n
+10. ]"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="JSON Components"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text=" 1. Array([)\n
+In JSON file, square bracket([) represents a JSON array.\n
+2. Objects({)\n
+In a JSON file, curly bracket({) represent a JSON object.\n
+3.Key\n
+A JSON object contains a key that is just a string. Pairs of key/value make up a JSON object.\n
+4. Value\n
+Each key has a value that could be String, Integer or Double etc."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="JSON Parsing"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="For parsing a JSON object, create an object of class JSONObject and specify a string containing JSON data to it."/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="700dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:background="#BDBDBD"
+                        android:text=" 1. String string:\n
+2. JSONObject read = new JSONObject(string);"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Parse the JSON:"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="700dp"
+                        android:layout_height="wrap_content"
+                        android:background="#BDBDBD"
+                        android:textSize="15sp"
+                        android:text=" 1. JSONObject color = read.getJSONObject(''colors'');\n
+2. textcolor = color.getString(''black'');"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="The method getJSONObject returns the JSON object. The method getString returns the string value of the specified key.\n
+\n
+There are other methods provided by this class for better parsing JSON files:\n
+\n
+1. get(String name)\n
+This method just Returns the value but in the form of Object type.\n\n
+2. getBoolean(String name)\n
+This method returns the boolean value specified by the key.\n\n
+3. getDouble(String name)\n
+This method returns the double value specified by the key.\n\n
+4. getInt(String name)\n
+This method returns the integer value specified by the key.\n\n
+5. getLong(String name)\n
+This method returns the long value specified by the key.\n\n
+6. length()\n
+This method returns the number of name/value mappings in this object.\n\n
+7. names()\n
+This method returns an array containing the string names in this object."/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

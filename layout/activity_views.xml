@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Views">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:text="Views"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_view_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="The UI consists of a hierarchy of objects called views - every element of the screen is a view.
+The View class represents the basic building block for all UI components, and the base classes that provide interactive UI components such as buttons, checkboxes, and text entry fields.\n"/>
+
+            <TextView
+                android:id="@+id/tv_view_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="View Groups"/>
+
+            <TextView
+                android:id="@+id/tv_view_grp_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Views canbe grouped together inside a view group (ViewGroup), which acts as a container of views. The relationship is parent-child, in which the parent is a view group,
+and the child is a view or view group within the group. The following are common view groups:\n
+\n
+- ScrollView:\n
+A group that contains one other child view and enables scrolling the child view.\n
+\n
+- RecyclerView:\n
+A group that contains a list of other views or view groups and enables scrolling them by adding and removing views dynamically from the screen.\n"/>
+
+            <TextView
+                android:id="@+id/tv_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Layouts"/>
+
+            <TextView
+                android:id="@+id/tv_layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="The views for a screen are organised in a hierarchy. At the root of this hierarchy is a ViewGroup that contains the layout of the entire screen.\n
+\n
+- LinearLayout:\n
+Layout results in a group of child views positioned and aligned horizontally or vertically.\n
+\n
+- RelativeLayout:\n
+A group of child views in which each view is positioned and aligned relative to other views within the view group. In other words, the positions of the child views can be described in relation to each other or to the parent view group\n
+\n
+- ConstraintLayout:\n
+A group of child views using anchor points, edges, and guidelines to control how views are positioned relative to other elements in the layout. ConstraintLayout was designed to make it easy to drag and drop views in the layout editor.\n
+\n
+- TableLayout:\n
+Layout arranges a group of child views into rows and columns.\n
+\n
+- FrameLayout:\n
+FrameLayout is designed to block out an area on the screen to display one view. Child views are drawn in a stack, with the most recently added child on top. The size of the FrameLayout is the size of its largest child view.\n
+\n
+- GridLayout:\n
+Layout places its child screens on a rectangular grid that can be scrolled."/>
+
+            <ImageView
+                android:id="@+id/iv_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/layout"/>
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Value Resource Files"/>
+
+            <TextView
+                android:id="@+id/tv_value_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Keeping values such as strings and color in separate resource files makes it easier to manage them, especially if you use them more than once in your layouts.\n
+For example, it is essential to keep strings in a separate resource file for translating and localizing your app, so that you can create a string resource file for each language without changing your code.
+Resource files for images, colors, dimensions, and other attributes are handy for developing and app for different device screen sizes and orientation.\n
+\n
+- Strings:\n
+The strings.xml file is used to store the string values to be use in your app.\n
+\n
+- Colors:\n
+The colors.xml file is used to define and store the color values to be used in the app.\n
+\n
+- Dimensions:\n
+The dimens.xml file is used to store the dimension values to be used in the app for padding, margins, size etc for different views.\n
+\n
+- Styles:
+A style is a resource that specifies common attributes such as height, padding, font color, font size, background color. Styles are meant for attributes that modify the look of the view."/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
