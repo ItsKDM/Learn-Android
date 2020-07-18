@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kdm.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Advance.Advance_ViewPager"></activity>
+        <activity android:name=".Advance_SearchView" />
+        <activity android:name=".Advance.Advance_WebView" />
+        <activity android:name=".Advance.Advance_Bottom_Navi" />
+        <activity android:name=".Advance.Advance_Custom_Lv" />
+        <activity android:name=".Begin.Begin_Implement_Frag2" />
+        <activity android:name=".Begin.Begin_Implement_Frag1" />
+        <activity android:name=".Begin.Begin_ImplementFragment" />
+        <activity android:name=".Advance.Advance_Tabhost" />
+        <activity android:name=".Advance.Advance_Gridview" />
+        <activity android:name=".Advance.Advance_Listview" />
+        <activity android:name=".Advance.Advance_Stackview" />
+        <activity android:name=".Advance.Advance_Adapterview" />
+        <activity android:name=".Advance.Advance_Imageswitcher" />
+        <activity android:name=".Advance.Advance_Textswitcher" />
+        <activity android:name=".Begin.Begin_Actionbar" />
+        <activity android:name=".Begin.Begin_Alertdialog" />
+        <activity android:name=".Begin.Begin_Resultintent2" />
+        <activity android:name=".Begin.Begin_Resultintent1" />
+        <activity android:name=".Begin.Begin_Senddataintent2" />
+        <activity android:name=".Begin.Begin_Senddataintent1" />
+        <activity android:name=".Intent" />
+        <activity android:name=".Begin.Begin_Simpleintent2" />
+        <activity android:name=".Begin.Begin_Simpleintent1" />
+        <activity android:name=".Begin.Begin_Popupmenu" />
+        <activity android:name=".Begin.Begin_Contextmenu" />
+        <activity android:name=".Begin.Begin_Optionmenu" />
+        <activity android:name=".Begin.Begin_Spinner" />
+        <activity android:name=".Begin.Begin_Date" />
+        <activity android:name=".Begin.Begin_Time" />
+        <activity android:name=".Begin.Begin_Progressbar" />
+        <activity android:name=".Begin.Begin_Seekbar" />
+        <activity android:name=".Begin.Begin_Ratingbar" />
+        <activity android:name=".Begin.Begin_Simple_Custom" />
+        <activity android:name=".Begin.Begin_Toggle" />
+        <activity android:name=".Begin.Begin_Switch" />
+        <activity android:name=".Begin.Begin_CheckBox" />
+        <activity android:name=".Begin.Begin_Radio" />
+        <activity android:name=".Begin.Begin_AutoComplete" />
+        <activity android:name=".Begin.Begin_Button" />
+        <activity android:name=".Begin.Begin_ImageView" />
+        <activity android:name=".Begin.Begin_EditText" />
+        <activity android:name=".Begin.Begin_TextView" />
+        <activity android:name=".Firebase" />
+        <activity android:name=".JSON" />
+        <activity android:name=".Containers" />
+        <activity android:name=".Fragments" />
+        <activity android:name=".Data" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Views" />
+        <activity android:name=".Fundamentals" />
+        <activity android:name=".ProjectStructure" />
+        <activity android:name=".AndroidStudio" />
+        <activity android:name=".IntroAndroid" />
+        <activity android:name=".Pro" />
+        <activity android:name=".Tips" />
+        <activity android:name=".Advance.Advance" />
+        <activity android:name=".Begin.Begin" />
+        <activity android:name=".Basic.Basic" />
+        <activity android:name=".Intro" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
